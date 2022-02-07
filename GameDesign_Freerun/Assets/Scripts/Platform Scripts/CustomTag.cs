@@ -6,11 +6,11 @@ public class CustomTag : MonoBehaviour
     [SerializeField]
     private List<string> tags = new List<string>();
 
-    public bool IsEnabled = true;
+    public bool IsEnabled = true; //why is this public?
 
     public int Count { get => tags.Count; }
     
-    public bool HasTag(string tag)
+    public bool HasTag(string tag) //why is this public?
     {
         return tags.Contains(tag);
     }

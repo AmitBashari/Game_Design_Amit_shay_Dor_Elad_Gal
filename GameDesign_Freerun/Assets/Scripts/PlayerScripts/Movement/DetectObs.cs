@@ -11,7 +11,7 @@ public class DetectObs : MonoBehaviour
     private float _parkourTimeLimit = 2;
 
     [SerializeField]
-    public bool Obstruction;
+    public bool Obstruction; // Why is it both public and SerializeField?
 
     private GameObject _object;
     private Collider _currentCol;
@@ -41,7 +41,6 @@ public class DetectObs : MonoBehaviour
             }
         }
     }
-
     private void Update()
     {
         
