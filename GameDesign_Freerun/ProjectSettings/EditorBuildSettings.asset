@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/ShemTov_Amit.unity
+    guid: 52b56f2a718e92b41975dfe084ca5b3e
   m_configObjects: {}

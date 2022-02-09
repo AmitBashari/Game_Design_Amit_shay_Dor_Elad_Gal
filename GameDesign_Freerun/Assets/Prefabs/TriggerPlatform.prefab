@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 6555541265084716463}
   - component: {fileID: 6555541265084716462}
   - component: {fileID: 6555541265084716458}
-  - component: {fileID: 6555541265084716459}
   m_Layer: 0
   m_Name: TriggerPlatform
   m_TagString: TriggerPlatform
@@ -126,15 +125,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.99999994, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6555541265084716459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6555541265084716460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 001fb84b0b488c84ea86f7ae4796384c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
