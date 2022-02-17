@@ -7,6 +7,7 @@ TagManager:
   - Death
   - RespawnPoint
   - TriggerPlatform
+  - FirstRespawnPoint
   layers:
   - Default
   - TransparentFX
