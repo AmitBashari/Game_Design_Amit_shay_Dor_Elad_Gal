@@ -5,14 +5,24 @@ using UnityEngine;
 public class RemoveLastBarrier : MonoBehaviour
 {
 
-    public GameObject _lastBarrier;
+    public GameObject LastBarrier;
+
+    public GameObject Arrow;
+    
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            _lastBarrier.SetActive(false);
+            Arrow.SetActive(true);
+
+            LastBarrier.SetActive(false);
             gameObject.SetActive(false);
         }
+    }
+
+    private void BarrierUnlocked()
+    {
+
     }
 
 }

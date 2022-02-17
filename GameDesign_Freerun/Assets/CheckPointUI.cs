@@ -7,6 +7,7 @@ public class CheckPointUI : MonoBehaviour
 {
     public GameObject RespawnCanvas;
     public GameObject StartRoundCanvas;
+    public GameObject Bottle;
 
     private bool _isFirstCheckPoint = true;
 
@@ -24,7 +25,13 @@ public class CheckPointUI : MonoBehaviour
         {
             RespawnCanvas.SetActive(true);
             Invoke(nameof(SetCheckPointCanvasActiveFalse), 2f);
-        }   
+        }
+
+        if (other.gameObject.tag == "Bottle")
+        {
+            Bottle.SetActive(true);
+            Invoke(nameof(SetBottlesActiveFalse), 2f);
+        }
     }
 
     private void SetCheckPointCanvasActiveFalse()
@@ -35,5 +42,9 @@ public class CheckPointUI : MonoBehaviour
     private void SetStartRunCanvasActiveFalse()
     {
         StartRoundCanvas.SetActive(false);
+    }
+    private void SetBottlesActiveFalse()
+    {
+        Bottle.SetActive(false);
     }
 }
