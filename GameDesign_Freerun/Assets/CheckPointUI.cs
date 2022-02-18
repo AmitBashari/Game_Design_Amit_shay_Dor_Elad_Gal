@@ -6,10 +6,13 @@ using UnityEngine.UI;
 public class CheckPointUI : MonoBehaviour
 {
     public GameObject RespawnCanvas;
+    public GameObject SecondTimeRespawn;
     public GameObject StartRoundCanvas;
     public GameObject Bottle;
-
-    private bool _isFirstCheckPoint = true;
+    private void Awake()
+    {
+        StopAllCoroutines();
+    }
 
 
     private void OnTriggerEnter(Collider other)
@@ -23,6 +26,7 @@ public class CheckPointUI : MonoBehaviour
 
         if (other.gameObject.tag == "RespawnPoint")
         {
+
             RespawnCanvas.SetActive(true);
             Invoke(nameof(SetCheckPointCanvasActiveFalse), 2f);
         }
@@ -46,5 +50,10 @@ public class CheckPointUI : MonoBehaviour
     private void SetBottlesActiveFalse()
     {
         Bottle.SetActive(false);
+    }
+
+    private void SetSRespawnAgainCanvasActiveFalse()
+    {
+        SecondTimeRespawn.SetActive(false);
     }
 }
